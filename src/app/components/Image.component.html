@@ -1,0 +1,12 @@
+<div
+  style="display: inline-flex; position: relative"
+  [id]="'loadedImgWrapper' + data.id"
+>
+  <img
+    src="{{ data.img }}"
+    [id]="'loadedImg' + data.id"
+    alt=""
+    (click)="handleClick($event)"
+    (mousemove)="handleMouseMove($event)"
+  />
+</div>

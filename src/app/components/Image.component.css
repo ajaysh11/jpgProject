@@ -1,0 +1,47 @@
+.pointerWrapper {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+.backOrange {
+  background-color: orange;
+}
+.backBlue div {
+  background: blue;
+}
+.piece1 {
+  position: absolute;
+  width: 1px;
+  height: 4px;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.piece2 {
+  position: absolute;
+  width: 1px;
+  height: 4px;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.piece3 {
+  position: absolute;
+  width: 4px;
+  height: 1px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.piece4 {
+  position: absolute;
+  width: 4px;
+  height: 1px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}

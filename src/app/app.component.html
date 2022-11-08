@@ -1,0 +1,29 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12 btn btn-primary"></div>
+  </div>
+</div>
+<hr style="background-color: black" />
+<div class="row">
+  <div class="slick-wrapper" #capture>
+    <ngx-slick-carousel
+      class="carousel"
+      #slickModal="slick-carousel"
+      (afterChange)="afterChange($event)"
+      [config]="slideConfig"
+    >
+      <div ngxSlickItem *ngFor="let image of images;let i = index;" class="slide">
+        <div >
+          <image-root
+            class="img+{{i}}"
+            [data]="image"
+            (calcDistance)="handleCalcDistance($event,i)"
+          ></image-root>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</div>
+
+<button class="export-button" (click)="handleExportCsv()">Export CSV</button>
+<button class="export-button" (click)="downloadImage()" style="top: 60px">Download Image</button>
